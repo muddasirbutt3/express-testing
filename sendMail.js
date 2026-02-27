@@ -51,7 +51,7 @@ const transporter = nodemailer.createTransport({
 async function sendMail() {
   return await transporter.sendMail({
     from: "My App <muddasirbutt3@gmail.com>",
-    to: "muddasirbutt4fun@gmail.com",
+    to: ["muddasirbutt4fun@gmail.com",'khizrabutt75@gmail'],
     subject: "Welcome",
     text: "Thanks for signing up!",
   });
